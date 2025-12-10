@@ -138,14 +138,6 @@ for i, orig_idx in enumerate(sample_orig_indices, 1):
     print(f"- Intent (what the user wants): {pred_int_label}")
     print(f"- Satisfaction score (how satisfied/urgent): {pred_score}\n")
 
-    value_desc = (
-        "Value: Combining intent (classification) and a numeric satisfaction score (regression) from a single model "
-        "lets organizations route and prioritize efficiently. Example: if intent='cancel_order' and the satisfaction "
-        "score is low (small predicted value), escalate to a human agent; if intent='book_flight' and score is high, "
-        "automate fulfillment and consider upsell. This single-model approach reduces latency and operational complexity "
-        "while delivering richer signals for decision-making."
-    )
-    print(value_desc)
 
     # Separator for clarity
     print("-" * 80)
